@@ -1,61 +1,53 @@
-/*********************** Base Styles ****************************/
+/******* Base Styles ************/
 * {
-  /*box-sizing: content-box;*/
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/******* Body font size ********/
+body {
+  font-size: 100%;
+}
+
+/******* Page header settings *******/
 h1 {
   text-align: center;
-  margin-bottom: 15px;
-}
-h3 {
-  border: 1px solid black;
-  /*positioning: absolute;*/
-  /*positioning: relative;*/
-  padding: 5px;
-  width: 35%;
-  top: 0
-  right: 0;
-  text-align: center;
-  float: right;
-}
-/*
-p {
-  border: 1px solid black;
-  *positioning: absolute;*
-    *positioning: relative;*
-  padding: 5px;
-  width: 35%;
-  top: 0
-  right: 0;
-  text-align: center;
-  float: right;
-}*/
-
-.row > div {
-  background-color: gray;
-  border: 1px solid black;
-  float: left;
-  /*positioning: absolute;*/
-  positioning: relative;
-  /*margin: 15px;*/
-
-  /*width: 90%;
-  height: 150px;
-  margin-left: auto;
-  margin-right: auto;*/
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
+/******* Section header settings *******/
+h2 {
+  position: absolute;
+  top: 0px;
+  right:0px;
+  margin: auto;
+  float: none;
+  width: 170px;
+  border:1px solid black;
+  text-align:center;
+  padding: center;
+}
+
+/******* Container settings for menu item header and contents *******/
 section {
-  /*positioning: absolute;*/
-  /*positioning: relative;*/
-  padding: 5px;
-  float: left;
+  /*clear: margin;*/
+  position: relative;
+  border:1px solid black;
+  background-color: gray;
+  /*margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;*/
+  margin: 10px;
+  padding: 10px;
+  padding-top: 35px;
+  /*font-size: 100%;*/
+
 }
 
+/****** Styling for Menu headings **********/
 #chicken {
   background-color: #ffcccc;
 }
@@ -65,20 +57,13 @@ section {
 }
 #sushi {
   background-color: #ffcc99;
-
-}
-
-/* Simple Responsive Framework. */
-.row {
-  width: 100%;
 }
 
 /************************Desk Top View ********************************/
 @media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,
-  .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    foat: left;
-    border: 1px solid black;
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    margin: auto;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -121,10 +106,10 @@ section {
 
 /************************Tablet View********************************/
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
-  .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid black;
+    margin: auto;
+    /*border: 1px solid black;*/
   }
   .col-md-1 {
     width: 8.33%;
@@ -166,10 +151,10 @@ section {
 
 /************************Mobile View********************************/
 @media (max-width: 767px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-4, .col-sm-5, .col-sm-6,
-  .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
-    border: 1px solid black;
+    margin: auto;
+    /*border: 1px solid black;*/
   }
   .col-sm-1 {
     width: 8.33%;
